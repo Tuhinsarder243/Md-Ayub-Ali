@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@keyframes rgb-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes scan-sweep {
+  0% {
+    top: 0%;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 98%;
+    opacity: 0.2;
+  }
+}
+
+.animate-rgb {
+  background: linear-gradient(90deg, #ff0055, #7a00ff, #00d2ff, #00ff88, #ffb800, #ff0055);
+  background-size: 300% 300%;
+  animation: rgb-flow 4s ease infinite;
+}
+
+.animate-scan {
+  animation: scan-sweep 2s ease-in-out infinite alternate;
+}

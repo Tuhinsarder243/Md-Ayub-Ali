@@ -1,0 +1,6 @@
+{
+  "name": "Auto AI Lite - Android Native App Suite",
+  "description": "Complete production-ready native Android Kotlin codebase and interactive device emulator for Auto AI Lite with floating overlay, accessibility gestures, Gemini AI signal engine, and Firestore licensing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
